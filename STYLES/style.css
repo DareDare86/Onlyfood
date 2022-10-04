@@ -1,61 +1,157 @@
-*,
-::after,
-::before {
-  box-sizing: border-box;
+:root {
+  /* FONT */
+
+  --FONT-heading-section-nav-title-primary: "Chau Philomene One", sans-serif;
+  --FONT-text-p-body-secondary: "Rubik", sans-serif;
+
+  /* COLOR */
+  --COLOR-BACKGROUND-Navbar-Form: #ffeddc;
+  --COLOR-BACKGROUND-Hero: #fffcfa;
+  --COLOR-BACKGROUND-PricingCard: #fff3e8;
+
+  --COLOR-FONT-header: #2e2e2e;
+  --COLOR-FONT-text-body: #4f4e4e;
+  --COLOR-FONT-section-title: #a15c1f;
+  --COLOR-FONT-numbers: #ababab;
+  --COLOR-FORM-FONT: #452000;
+  --COLOR-FORM-FONT-text: #553111;
+
+  --COLOR-BUTTON-primary: #e67e22;
+  --COLOR-BUTTON-secondary: #fff3e8;
+  --COLOR-BUTTON-Form: #452000;
+
+  --COLOR-ICON: #e67e22;
+
+  /* SIZING */
 }
-
-* {
-  padding: 0;
-  margin: 0;
-  font: inherit; /*!!!  reset all H1 H2 …ect*/
-}
-
-/*
-  Allow percentage-based heights in the application
-*/
-
 html,
 body {
-  height: 100%;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  font-family: var(--FONT-text-p-body-secondary);
+  color: var(--COLOR-FONT-text-body);
 }
-
-/* Set core root defaults */
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
-/*
-Improve media defaults */
-
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-}
-
-/* Remove list styles on ul, ol elements with a list role, 
-which suggests default styling will be removed */
-
-ul[role="list"],
-ol[role="list"] {
-  list-style: none;
-}
-
-/*
-Avoid text overflows
-*/
-
-p,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  overflow-wrap: break-word;
+  letter-spacing: 1%;
+  font-family: var(--FONT-heading-section-nav-title-primary);
+}
+/* ------------------------------------HERO and NAV */
+.btn-navbar {
+  /* DESKTOP */
+  background-color: var(--COLOR-BUTTON-primary);
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  padding: 0.6rem 1.8rem;
+  border-radius: 7px;
+  position: absolute;
+  top: 0;
+  margin-left: 5rem;
+}
+.nav-bar-links {
+  /* DESKTOP */
+  font-size: 1.25rem;
+  line-height: 1.6rem;
+  font-family: var(--FONT-heading-section-nav-title-primary);
+  font-weight: 400;
+}
+h1 {
+  /* DESKTOP */
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 4rem;
+}
+h2 {
+  /* DESKTOP */
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 3.75rem;
+}
+
+h3 {
+  /* DESKTOP */
+  font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 3.0625rem;
+}
+
+.btn-primary {
+  /* DESKTOP */
+  background-color: var(--COLOR-BUTTON-primary);
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  padding: 1.2rem 2.1rem;
+  border-radius: 9px;
+}
+.btn-secondary {
+  /* DESKTOP */
+  background-color: #fff3e8;
+  color: #2e2e2e;
+
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  padding: 1.2rem 2.1rem;
+  border-radius: 9px;
+  display: flex;
+}
+.btn-secondary-icon {
+  margin-top: 0.4rem;
+  margin-left: 1rem;
+}
+
+/* -------------------------------------SECTION HOW IT WORKS */
+
+h4 .section-title {
+  /* DESKTOP */
+  color: var(--COLOR-FONT-section-title);
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 3.0625rem;
+  letter-spacing: 0.05rem;
+}
+
+.number3 {
+  /* DESKTOP */
+  font-weight: 400;
+  font-size: 6.875rem;
+  line-height: 3.0625rem;
+  font-family: var(--FONT-heading-section-nav-title-primary);
+  color: #ababab;
+}
+/* -----------------------------------------MEALS */
+.meals-tag {
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: #2e2e2e;
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 20px;
+  line-height: 1.2;
+}
+
+.green {
+  background-color: #40c057;
+}
+.yellow {
+  background-color: #dfc747;
+}
+
+/* -----------------------------------------FORMS */
+.form-h2 {
+  /* DESKTOP */
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 3.75rem;
+  color: var(--COLOR-FORM-FONT);
+}
+
+.form-text {
+  color: #553111;
 }
