@@ -11,6 +11,7 @@
 
   --COLOR-FONT-header: #2e2e2e;
   --COLOR-FONT-text-body: #4f4e4e;
+  --COLOR-FONT-text-body: #4f4e4e;
   --COLOR-FONT-section-title: #a15c1f;
   --COLOR-FONT-numbers: #ababab;
   --COLOR-FORM-FONT: #452000;
@@ -47,6 +48,9 @@ h6 {
   letter-spacing: 1%;
   color: var(--COLOR-FONT-header);
   font-family: var(--FONT-heading-section-nav-title-primary);
+}
+
+.wrapper {
 }
 /* ------------------------------------HERO and NAV */
 .btn-navbar {
@@ -112,17 +116,40 @@ h3 {
   line-height: 2.24rem;
   padding: 0.96rem 2.72rem;
   border-radius: 9px;
-  display: block;
+  /* display: inline-block; */
+  text-decoration: none;
+}
+.btn-secondary-conatiner {
+}
+.btn-secondary-flex {
+  display: flex;
 }
 .btn-secondary {
   /* DESKTOP */
-
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.24rem;
+  text-decoration: none;
   background-color: #fff3e8;
-  display: block;
-  padding: 0.96rem 2.72rem;
-  border-radius: 9px;
+  color: #525252;
+  padding-top: 0.96rem;
+  padding-bottom: 0.96rem;
+  padding-left: 2.72rem;
+  padding-right: 2.72rem;
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
 }
-.btn-ahref-secondary {
+
+.btn-secondary-svg {
+  padding-right: 2.27rem;
+
+  display: flex;
+  background-color: #fff3e8;
+  align-items: center;
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+.btn-nav-secondary {
   color: #2e2e2e;
   font: var(--FONT-text-p-body-secondary);
   font-size: 2rem;
@@ -131,24 +158,25 @@ h3 {
   text-decoration: none;
 }
 
-.hero-text {
-  text-align: left;
-  font-weight: 400;
-  max-width: 550px;
-  font-size: 2.2rem;
-}
-.hero {
+.section-hero {
   margin: 0 auto;
   position: relative;
   padding: 5rem 10rem;
 }
 
-.text-250-text {
-  line-height: 1.8rem;
-  margin-left: 10rem;
+.hero-description {
   text-align: left;
   font-weight: 400;
   max-width: 550px;
+  font-size: 2.2rem;
+}
+
+.text-250-text {
+  line-height: 1.8rem;
+  margin-left: 10rem;
+
+  font-weight: 400;
+
   font-size: 1.5rem;
 }
 .text-250-text-color {
@@ -156,8 +184,6 @@ h3 {
   color: var(--COLOR-BUTTON-primary);
 }
 .container-text-250 {
-  position: absolute;
-  width: 100%;
   background: linear-gradient(
     90deg,
     rgb(255, 243, 232) 5%,
@@ -165,11 +191,10 @@ h3 {
     #fff3e8 50.16%,
     #fff3e800 96.96%
   );
-  bottom: -7rem;
-  left: 0;
-  z-index: 100;
+
   padding: 0.5rem 0;
 }
+
 /* -------------------------------------SECTION HOW IT WORKS */
 
 h4,
@@ -219,8 +244,4 @@ h4,
 
 .form-text {
   color: #553111;
-}
-
-.tex {
-  font-size: 1.8rem;
 }
