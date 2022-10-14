@@ -163,7 +163,7 @@ h3 {
   /* DESKTOP */
   font-weight: 400;
   font-size: 3.6rem;
-  line-height: 4.9rem;
+  line-height: 1.1;
 }
 
 .button-container {
@@ -319,6 +319,7 @@ h3 {
   opacity: 100%;
 }
 /********************************** SECTION HOW IT WORKS */
+
 .section-how-it-works {
   margin-top: 10rem;
 }
@@ -332,13 +333,65 @@ h4,
   letter-spacing: 0.08rem;
 }
 
-.number3 {
+.numbers {
   /* DESKTOP */
   font-weight: 400;
   font-size: 11rem;
   line-height: 4.9rem;
   font-family: var(--FONT-heading-section-nav-title-primary);
   color: #ababab;
+}
+.how-it-works-box h3 {
+  margin-top: 5rem;
+}
+.how-it-works-container {
+  display: flex;
+  flex-direction: column;
+}
+.how-it-works-box {
+  margin-top: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10rem;
+  background: linear-gradient(
+    270deg,
+    rgba(252, 237, 224, 0.7) 0%,
+    rgba(255, 243, 232, 0) 100%
+  );
+  border-radius: 0px 46px 46px 0px;
+}
+
+.hit-image {
+  max-width: 31.1rem;
+}
+.hit-text {
+  align-self: flex-start;
+  margin-top: 10rem;
+  flex: 1;
+}
+.hit-description {
+  font: var(--FONT-text-p-body-secondary);
+  font-size: 2rem;
+  font-weight: 400;
+  color: #4f4e4e;
+  margin-top: 2.5rem;
+  line-height: 1.4;
+}
+.hitb2-text {
+  order: 1;
+}
+.hitb2 {
+  background: linear-gradient(
+    90deg,
+    rgba(252, 237, 224, 0.7) 0%,
+    rgba(255, 243, 232, 0) 100%
+  );
+  border-top-left-radius: 9rem;
+  border-bottom-left-radius: 9rem;
+}
+.hit-description {
+  max-width: 50rem;
 }
 /*********************************** MEALS */
 .meals-tag {
