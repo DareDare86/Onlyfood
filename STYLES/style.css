@@ -302,6 +302,7 @@ h3 {
 .featured-img-container {
   margin-top: 1rem;
   display: flex;
+  gap: 2rem;
   justify-content: space-between;
   align-items: center;
 }
