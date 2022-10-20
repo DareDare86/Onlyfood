@@ -64,14 +64,25 @@ h6 {
   max-width: 120rem;
   margin: 0 auto;
 }
+.wrapper-two-120rem-HIT {
+  max-width: 120rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: auto;
+}
+
 .padding-left-right-40px {
   padding: 0 4rem 0rem 4rem;
 }
-
+.HIT-container {
+  max-width: 102rem;
+  /* margin: 0 auto; */
+  /* border: 1px solid red; */
+}
 /* default ---------------------------------  GRID  */
 .grid {
   display: grid;
-  column-gap: 3rem;
+  column-gap: 2rem;
 }
 /* grid 2 kolone */
 .grid--2-cols {
@@ -87,6 +98,10 @@ h6 {
 
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--center-v {
+  align-items: center;
 }
 
 /***************************************** HEADER - NAV */
@@ -183,7 +198,7 @@ h2 {
 h3 {
   /* DESKTOP */
   font-weight: 400;
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   line-height: 1.1;
 }
 
@@ -348,17 +363,18 @@ h3 {
 }
 .how-it-works-content {
   margin-top: 7.5rem;
+  align-items: center;
 }
 .numbers {
   /* DESKTOP */
   font-weight: 400;
-  font-size: 11rem;
-  line-height: 4.9rem;
+  font-size: 9rem;
+  line-height: 1;
   font-family: var(--FONT-heading-section-nav-title-primary);
   color: #ababab;
 }
 .step-tex-box h3 {
-  /* margin-top: 5rem; */
+  margin-top: 1rem;
 }
 .how-it-works-content {
   background: linear-gradient(
@@ -381,18 +397,18 @@ h4,
 }
 .hit-description {
   font: var(--FONT-text-p-body-secondary);
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-weight: 400;
   color: #4f4e4e;
-  /* margin-top: 2.5rem; */
+  margin-top: 1.2rem;
   line-height: 1.4;
 }
 .step-img {
-  width: 55%;
+  width: 45%;
   margin-left: auto;
 }
 .step-img2 {
-  width: 55%;
+  width: 45%;
   margin-right: auto;
 }
 .step-tex-box {
@@ -401,6 +417,7 @@ h4,
 .step-tex-box2 {
   order: 1;
 }
+
 .how-it-works-content2 {
   background: linear-gradient(
     90deg,
